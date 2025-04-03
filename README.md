@@ -1,145 +1,95 @@
 # Des_technico 
-File Sharing Application - Test Repository
+File Sharing Application Login - README
 
-Overview
+📌 Overview
 
-This repository contains the test plan, scenarios, test cases, and other relevant documents for the File Sharing Application Login functionality. The goal of this testing process is to ensure that the login feature and file upoading  works seamlessly across different environments while maintaining security and usability.
+The File Sharing Application Login ensures a secure and user-friendly authentication system for accessing the file-sharing platform. The objective of this project is to validate the login functionality, security features, and overall usability.
 
-Project URL
+🚀 Features
 
-Application URL: File Sharing Application Login
+✅ Valid Login – Allows registered users to log in successfully.
 
-Contents of the Repository
+❌ Invalid Login Handling – Displays appropriate error messages for incorrect credentials.
 
-Test Plan: Outlines objectives, scope, testing strategy, and deliverables.
+🔐 Forgot Password Functionality – Enables users to reset passwords securely.
 
-Test Cases: A set of functional, usability, and security test cases.
+🔄 Logout Feature – Ensures proper session termination.
 
-Mind Map: Visual representation of the login testing flow.
+🎨 UI Elements Verification – Checks for consistency and responsiveness across devices.
 
-Bug Reports: Documentation of identified defects and fixes.
+📝 Test Plan
 
-Testing Scope
+🎯 Objectives:
 
-Features to be Tested
+Verify that valid users can log in successfully.
 
-Valid Login: Ensuring users with correct credentials can access the application.
+Ensure incorrect login attempts return relevant error messages.
 
-Invalid Login: Handling incorrect credentials, empty fields, and locked accounts.
+Validate security measures such as password protection and account lockout.
 
-Forgot Password Functionality: Validating password recovery process.
+Conduct cross-browser compatibility testing.
 
-Logout Functionality: Ensuring users can securely log out.
+📌 Scope of Testing:
 
-UI/UX Testing: Checking page elements, responsiveness, and usability.
+Functional Testing – Verifies login feature behavior.
 
-Security Testing: Verifying authentication and protection against vulnerabilities.
+Usability Testing – Ensures a smooth user experience.
 
-Testing Types
+Security Testing – Validates authentication protection mechanisms.
 
-Functional Testing - Ensuring login features work as expected.
+Compatibility Testing – Tests across different browsers and devices.
 
-Usability Testing - Evaluating user experience and interface design.
+🛠 Testing Strategy:
 
-Security Testing - Checking for authentication flaws and security risks.
+Manual & Automated Testing – Using Selenium for automation.
 
-Cross-Browser Testing - Validating compatibility across Chrome, Firefox, Edge, and Safari.
+Positive & Negative Test Cases – To cover all possible login scenarios.
 
-Testing Strategy
+Cross-Browser Testing – On Chrome, Firefox, Edge, Safari.
 
-Combination of manual and automated testing
+Regression Testing – After bug fixes.
 
-Execution of positive and negative test cases
-
-Performing regression testing after bug fixes
-
-Testing Environment
+⚙️ Testing Environment:
 
 Operating Systems: Windows, macOS, Linux
 
 Browsers: Chrome, Firefox, Edge, Safari
 
-Network: Stable internet connection
+Network: Stable Internet Connection
 
-Tools and Technologies Used
+📋 Test Cases
 
-Selenium (for automation testing)
+🐞 Bug Report
 
-MS Excel (for documenting test cases and reports)
+📑 Test Summary Report
 
-Test Environment: Pre-configured test setup
+Total Test Cases: 21
 
-Test Data: User credentials and simulated data sets
+Passed: 21
 
-Roles and Responsibilities
+Failed: 0
 
-Test Manager: Pooja Yadav
+Bugs Identified: 8
 
-Test Engineer: Gandla Pavan
+Critical Bugs Fixed: 4
 
-Developers: Responsible for fixing defects
+🗺 XMind - Test Strategy Mapping
 
-Test Deliverables
+The XMind Mind Map visualizes the complete test approach, covering:
 
-Test Plan Document (Contains detailed strategy and scope)
+Test Objectives
 
-Test Scenarios & Test Cases (Defined step-by-step execution plan)
+Testing Scope & Features
 
-Bug Reports (List of defects identified and tracked)
+Test Cases Coverage
 
-Test Summary Report (Overall test execution results)
+Risk Mitigation Strategies
 
-Schedule
+🏁 Conclusion
 
-Activity
+The File Sharing Application Login testing successfully validated the login functionalities, ensuring security, usability, and compatibility. Most test cases passed, and reported defects are in progress for resolution. The login system meets the essential quality standards, ensuring a smooth authentication experience for users.
 
-Start Date
 
-End Date
-
-Test Plan Creation
-
-02-Apr-2025
-
-02-Apr-2025
-
-Test Case Execution
-
-02-Apr-2025
-
-02-Apr-2025
-
-Bug Reporting & Fixes
-
-02-Apr-2025
-
-02-Apr-2025
-
-Test Summary Report
-
-2-Apr-2025
-
-2-Apr-2025
-
-Risks and Mitigation
-
-Risk
-
-Mitigation Strategy
-
-Unstable Application Build
-
-Communicate with developers for fixes before testing
-
-Delayed Bug Fixes
-
-Prioritize high-severity bugs
-
-Browser Compatibility Issues
-
-Perform cross-browser testing
-
-Conclusion
 
 This repository serves as a comprehensive resource for validating the login functionality of the File Sharing Application. By leveraging both manual and automated testing approaches, we aim to ensure a secure and seamless user experience.
 
