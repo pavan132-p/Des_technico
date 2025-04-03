@@ -52,27 +52,28 @@ public class File_Sharing {
 	
 	
 	
-//	@Test(priority =3)
-//	
-//	public void selectallfiles() throws InterruptedException {
-//		
-//		//Thread.sleep(5000);
-//		driver.findElement(By.xpath("//*[@aria-controls='menu-list-:r5:']")).click();
-//		//driver.findElement(By.xpath("//b[@role='menuitem'][@id='menu-list-:r5:-menuitem-:r7:']")).click();
-//		
-//		
-//	}
-	 
-//	@Test
-//	
-//	public void TC_01() {
-//		
-//		driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C://Users//PAVAN\\\\Downloads//DDDDD.pdf");
-//		driver.findElement(By.xpath("//span[@class='chakra-checkbox__control css-1yld03o']")).click();
-//		driver.findElement(By.xpath("//*[@placeholder='Set Password']")).sendKeys("Prince123");
-//		driver.findElement(By.xpath("//button[normalize-space()='Upload File']")).click();
-//		
-//	}
+@Test(priority = 3)
+    public void uploadFile() {
+        driver.get("https://file-sharing-application.netlify.app/dashboard");
+        
+        WebElement uploadButton = driver.findElement(By.xpath("//input[@type='file']"));
+        uploadButton.sendKeys("C:\\path\\to\\file.txt");
+        
+        WebElement uploadSuccess = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Upload successful')]")));
+        Assert.assertTrue(uploadSuccess.isDisplayed(), "File upload failed");
+    }
+
+    @Test(priority = 4)
+    public void logout() {
+        driver.findElement(By.xpath("//button[normalize-space()='Logout']")).click();
+        WebElement loginButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[normalize-space()='Login']")));
+        Assert.assertTrue(loginButton.isDisplayed(), "Logout failed");
+    }
+ @AfterTest
+    public void tearDown() {
+        driver.quit();
+    }
+}
 	
 	
 	
