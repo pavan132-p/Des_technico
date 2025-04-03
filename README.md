@@ -3,7 +3,7 @@ File Sharing Application - Test Repository
 
 Overview
 
-This repository contains the test plan, scenarios, test cases, and other relevant documents for the File Sharing Application Login functionality. The goal of this testing process is to ensure that the login feature works seamlessly across different environments while maintaining security and usability.
+This repository contains the test plan, scenarios, test cases, and other relevant documents for the File Sharing Application Login functionality. The goal of this testing process is to ensure that the login feature and file upoading  works seamlessly across different environments while maintaining security and usability.
 
 Project URL
 
