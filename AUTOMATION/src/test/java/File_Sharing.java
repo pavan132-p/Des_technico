@@ -80,12 +80,4 @@ public class File_Sharing {
 	
 	
 	
-	@AfterTest
 	
-	public void teardown() {
-		
-	}
-	
-	
-
-}
