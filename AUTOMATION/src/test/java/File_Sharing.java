@@ -52,23 +52,29 @@ public class File_Sharing {
 	
 	
 	
-@Test(priority = 3)
-    public void uploadFile() {
-        driver.get("https://file-sharing-application.netlify.app/dashboard");
-        
-        WebElement uploadButton = driver.findElement(By.xpath("//input[@type='file']"));
-        uploadButton.sendKeys("C:\\path\\to\\file.txt");
-        
-        WebElement uploadSuccess = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Upload successful')]")));
-        Assert.assertTrue(uploadSuccess.isDisplayed(), "File upload failed");
-    }
-
-    @Test(priority = 4)
-    public void logout() {
-        driver.findElement(By.xpath("//button[normalize-space()='Logout']")).click();
-        WebElement loginButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[normalize-space()='Login']")));
-        Assert.assertTrue(loginButton.isDisplayed(), "Logout failed");
-    }
+	@Test(priority =3)
+	
+	public void clickupload() {
+		
+		driver.findElement(By.xpath("//button[@aria-label='Close']")).click();
+		
+		driver.findElement(By.xpath("//*[@aria-expanded='false'  or  @aria-expanded='true']")).click();
+		driver.findElement(By.xpath("//*[@data-index=\'1\']")).click();
+	}
+	
+	
+	@Test(priority=4)
+	
+	public void uploadfiles() throws InterruptedException {
+		// for selecting file 
+		driver.findElement(By.xpath("//*[@type=\'file\']")).sendKeys("C:\\Users\\PAVAN\\Downloads\\prince.jpg");
+		driver.findElement(By.xpath("//*[@aria-hidden='true']")).click();
+		driver.findElement(By.xpath("//*[@placeholder='Set Password']")).sendKeys("Prince132");
+		
+//		Thread.sleep(3000);
+		driver.findElement(By.xpath("//button[normalize-space()='Upload File']")).click();
+	}
+	
  @AfterTest
     public void tearDown() {
         driver.quit();
