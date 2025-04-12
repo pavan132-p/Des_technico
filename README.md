@@ -5,6 +5,8 @@ File Sharing Application Login - README
 
 The File Sharing Application Login ensures a secure and user-friendly authentication system for accessing the file-sharing platform. The objective of this project is to validate the login functionality, security features, and overall usability.
 
+PROJECT EXPLANATION VIDEO (Testing Overview): https://drive.google.com/file/d/1r-6tM_llaqGW5YqDUt7L5MPL3XpmJH7P/view?usp=sharing
+
 🚀 Features
 
 ✅ Valid Login – Allows registered users to log in successfully.
