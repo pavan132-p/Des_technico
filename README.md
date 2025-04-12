@@ -65,11 +65,11 @@ Network: Stable Internet Connection
 
 📑 Test Summary Report
 
-Total Test Cases: 21
+Total Test Cases: 40
 
-Passed: 21
+Passed: 37
 
-Failed: 0
+Failed: 03
 
 Bugs Identified: 8
 
